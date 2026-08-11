@@ -100,4 +100,4 @@ python tools/test-cf-ddns-v012.py
 
 ## 致谢
 
-感谢 [cnjn](https://github.com/cnjn) 分享固件和完整研究资料：[恩山原帖](https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8462464) / [GitHub 固件](https://github.com/cnjn/ZXSLC_SR1010/releases/tag/1) / [《星云max全分析》](https://github.com/cnjn/ZXSLC_SR1010/blob/main/%E6%98%9F%E4%BA%91max%E5%85%A8%E5%88%86%E6%9E%90.md)。
+感谢 [cnjn](https://github.com/cnjn) 分享最初用于研究的 NAND 固件样本：[恩山原帖](https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8462464) / [GitHub 固件](https://github.com/cnjn/ZXSLC_SR1010/releases/tag/1)。
