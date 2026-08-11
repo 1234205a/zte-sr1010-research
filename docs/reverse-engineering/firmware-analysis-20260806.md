@@ -1,6 +1,6 @@
 # ZXSLC SR1010 NAND 固件软件逆向（2026-08-06）
 
-> 样本来源与致谢：本阶段的初始离线研究基于 cnjn 公开分享的 [SR1010 NAND 固件](https://github.com/cnjn/ZXSLC_SR1010/releases/tag/1)，相关发布背景见[恩山无线论坛原帖](https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8462464&highlight=%E6%98%9F%E4%BA%91max)。该样本用于建立固件拆解和恢复工具链。
+> 样本来源与致谢：本阶段的初始离线研究基于 cnjn 公开分享的 [SR1010 NAND 固件](https://github.com/cnjn/ZXSLC_SR1010/releases/tag/1)，相关发布背景见[恩山无线论坛原帖](https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8462464&highlight=%E6%98%9F%E4%BA%91max)，后续完整研究见 cnjn 的[《星云max全分析》](https://github.com/cnjn/ZXSLC_SR1010/blob/main/%E6%98%9F%E4%BA%91max%E5%85%A8%E5%88%86%E6%9E%90.md)。该样本用于建立固件拆解和恢复工具链。
 
 ## 状态
 
