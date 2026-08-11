@@ -2,6 +2,19 @@
 
 本仓库用于处理自己的 SR1010：解密、检查、修改和重新打包 `config.bin`，以及分析 NAND 固件布局。请始终保留原始备份。
 
+## 主要逆向成果
+
+- **config.bin 已完整打通**：支持 Type-4 配置的结构检查、AES-256-CBC 解密、zlib 分块解压、XML 修改、重新加密打包和逐字节往返验证。
+- **配置密钥派生已还原**：确认当前格式按型号生成通用密钥短语，再派生 AES Key/IV；工具可直接处理 SR1010 导出的配置。
+- **NAND 与双槽布局已还原**：确认 128 MiB NAND、双 kernel/rootfs 槽、配置区和 Plugin 持久分区，并提供自动识别与提取工具。
+- **rootfs 加密已解开**：恢复槽内 AES-128-ECB 层，可提取 JFFS2/SquashFS 并继续分析系统组件。
+- **配置导入/导出调用链已定位**：从 Web Lua 入口追到 `cspd` 的加解密、CRC、分块和数据库处理函数。
+- **Web 与本地管理机制已分析**：还原登录 proof、CSRF、敏感字段加密封装及隐藏管理页面；确认 Web、Telnet、FTP 使用不同账号体系。
+- **启动与升级机制已分析**：整理 Bootloader、槽头、版本选择、产品/板型校验、CRC、升级密钥和签名边界。
+- **恢复与扩展路径已验证**：包含配置回滚、固件恢复检查，以及 Plugin Manager、WireGuard、DDNS 的构建和升级资料。
+
+核心细节见 [config.bin 往返分析](docs/reverse-engineering/config-bin-roundtrip-20260807.md)、[固件逆向总结](docs/reverse-engineering/software-reverse-20260806.md)和[工具索引](tools/README.md)。
+
 ## 1. 安装
 
 需要 Python 3.10+：
