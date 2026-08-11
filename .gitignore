@@ -1,0 +1,8 @@
+# Local/private artifacts
+private-artifacts/
+*.private
+*.secret
+.env
+
+__pycache__/
+*.py[cod]
